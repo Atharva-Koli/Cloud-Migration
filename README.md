@@ -102,7 +102,7 @@ cloud-native-migration-devops/
 Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/cloud-native-migration-devops.git
+git clone https://github.com/Atharva-Koli/Cloud-Migration.git
 ```
 
 Navigate through folders to view:
@@ -118,9 +118,9 @@ Navigate through folders to view:
 
 ## 🌐 Connect With Me
 
-📧 [atharvakoli.skn.comp@gmail.com](mailto:atharvakoli.skn.comp@gmail.com)  
-🔗 [LinkedIn – Atharva Koli](https://www.linkedin.com/in/atharva-koli/)  
-💼 [Portfolio – coming soon on increda.tech](https://increda.tech)
+📧 [atharvakoli289@gmail.com](mailto:atharvakoli289@gmail.com)  
+🔗 [LinkedIn – Atharva Koli](https://www.linkedin.com/in/atharva-koli-94879825b/)  
+
 
 ---
 
@@ -128,19 +128,8 @@ Navigate through folders to view:
 
 This project was completed as part of a 6-month internship at **Hisan Labs**, with guidance and support from the engineering and DevOps teams.
 
----
 
-## 📄 License
-
-This project is for educational and showcase purposes only. Please do not use sensitive configs or AWS keys in public forks.
 ```
 
 ---
 
-Let me know if you want help creating:
-- A matching **architecture diagram**
-- Sample **Terraform module** or **Dockerfile**
-- Your **GitHub repo name and description**
-- A version of this in **short format** for recruiters or a blog post
-
-Just say the word!
