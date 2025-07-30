@@ -1,0 +1,51 @@
+# Environment & Credentials
+.env
+*.pem
+*.key
+*.crt
+*.env.*
+secrets/
+config/*.secret.*
+
+#  Database dumps
+*.sql
+backups/
+*.db
+
+#  Docker
+*.log
+docker-compose.override.yml
+**/docker-volumes/
+
+#  Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+#  Logs
+*.log
+logs/
+*.out
+*.err
+
+#  Node & Python (if applicable)
+node_modules/
+__pycache__/
+*.pyc
+
+# OS / Editor specific
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.bak
+
+#CI/CD
+*.jenkinsfile.backup
+*.yaml.backup
+
+# Kubernetes (if manually applied)
+*.kubeconfig
+k8s/secrets/
