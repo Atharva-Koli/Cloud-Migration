@@ -1,0 +1,57 @@
+pipeline {
+    agent any
+
+    environment {
+        AWS_PROFILE = credentials('aws-profile')  // Use Jenkins credentials store
+    }
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                git 'https://github.com/yourusername/cloud-migration.git'
+            }
+        }
+
+        stage('Init Terraform') {
+            steps {
+                dir('terraform') {
+                    sh 'terraform init'
+                }
+            }
+        }
+
+        stage('Validate Terraform') {
+            steps {
+                dir('terraform') {
+                    sh 'terraform validate'
+                }
+            }
+        }
+
+        stage('Plan') {
+            steps {
+                dir('terraform') {
+                    sh 'terraform plan -var-file="terraform.tfvars"'
+                }
+            }
+        }
+
+        stage('Apply (Manual Approval)') {
+            steps {
+                input message: "Approve to apply Terraform?"
+                dir('terraform') {
+                    sh 'terraform apply -auto-approve -var-file="terraform.tfvars"'
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo ' Terraform apply completed successfully!'
+        }
+        failure {
+            echo ' Terraform apply failed.'
+        }
+    }
+}
