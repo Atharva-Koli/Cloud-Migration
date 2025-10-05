@@ -6,7 +6,7 @@
 
 ## 🧠 Project Overview
 
-This project was executed as part of a 6-month DevOps internship at **Hisan Labs (Cloudblitz subsidiary)**. The objective was to **migrate a legacy 3-tier web application** (frontend, backend, and database) to a **cloud-native architecture** using modern DevOps tools and best practices.
+This project was executed as part of a six-month DevOps internship at Hisan Labs. The objective was to **migrate a legacy 3-tier web application** (frontend, backend, and database) to a **cloud-native architecture** using modern DevOps tools and best practices. This project is a simulation of the actual enterprise-level application that was migrated for the org: cloudblitz.in, The actual codefiles and infrastructure, somewhat differ from what was originally used.
 
 The outcome was a fully containerized, orchestrated, and CI/CD-enabled application hosted on AWS, backed by Infrastructure as Code (IaC) and extensive automation.
 
